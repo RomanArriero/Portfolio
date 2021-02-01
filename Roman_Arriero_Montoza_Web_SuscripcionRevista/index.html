@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario Revista</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                font: 1rem "calibri", sans-serif;
+            }
+
+            body {
+                margin: 0;
+                padding: 20px;
+            }
+
+            h1 {
+                text-align: left;
+                font-size: 2rem;
+                font-weight: bold;
+                color: blue;
+            }
+
+            p {
+                font-weight: bold;
+            }
+
+            .pequenio {
+                width: 50px;
+            }
+
+            .mediano {
+                width: 200px;
+            }
+
+            .anchocompleto {
+                width: 100%;
+                padding: 20px;
+            }
+
+            td {
+                padding: 5px;
+            }
+
+            input, select {
+                border: 1px solid grey;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            a {
+                color: navy;
+                text-decoration: none;
+                width: 100%;
+
+            }
+
+            a:visited {
+                color: red;
+            }
+
+            a:hover {
+                color: grey;
+            }
+
+            nav {
+                text-align: center;
+
+            }
+
+            article {
+                float: left;
+                padding: 20px;
+                margin-right: 100px;
+            }
+
+            table {
+                width: 60%;
+                margin: auto;
+            }
+
+            input[type="submit"] {
+                background: blue;
+                padding: 10px 30px;
+                font-size: 1.2rem;
+                color: white;
+                font-weight: bold;
+                border: none;
+            }
+
+            footer {
+                text-align: center;
+                font-size: 3rem;
+                margin-right: 20px;
+                color: white;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <form method="post" action="http://www.cursos-diseno.es/mi-mail.php">
+
+            <header class="anchocompleto">
+                <img src="logo.png">
+            </header>
+
+            <hr>
+
+            <nav class="anchocompleto">
+                <a href="home">HOME</a>
+                <a href="casas">CASAS</a>
+                <a href="living">LIVING</a>
+                <a href="soluciones">SOLUCIONES</a>
+                <a href="contactos">CONTACTOS</a>
+                <a href="suscripciones">SUSCRIPCIONES Y TIENDA ONLINE</a>
+            </nav> 
+
+            <hr>
+
+            <article>
+                <h1>Datos de suscripción</h1>
+
+                <p>Campos obligatorios*</p>
+                <table>
+                    <tr>
+                        <td>Nombre*</td>
+                        <td><input type="text" name="nombre" class="mediano" autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos*</td>
+                        <td><input type="text" name="apellidos" class="mediano" required></td>
+                    </tr>
+                    <tr>
+                        <td>Direccion*</td>
+                        <td><input type="text" name="direccion" class="mediano" placeholder="Calle Mayor, 10 5A" required></td>
+                    </tr>
+                    <tr>
+                        <td>Codigo Postal*</td>
+                        <td><input type="text" name="cp" class="pequenio" maxlength="5" required></td>
+                    </tr>
+                    <tr>
+                        <td>Ciudad*</td>
+                        <td><input type="text" name="ciudad" class="mediano" required></td>
+                    </tr>
+                    <tr>
+                        <td>Provincia*</td>
+                        <td><select name="provincia">
+                            <option value="A">Madrid</option>
+                            <option value="B">Barcelona</option>
+                            <option value="C">Valencia</option>
+                            <option value="D">Bilbao</option>
+                            <option value="E">Sevilla</option>
+                            <option value="E">Leon</option>
+                            <option value="E">Asturias</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Telefono*</td>
+                        <td><input type="text" name="telefono" class="mediano" placeholder="(+34)91 257 65 32" required></td>
+                    </tr>
+                </table>
+
+                <h1>Datos de Usuario</h1>
+
+                <table>
+                    <tr>
+                        <td>Direccion de correo electronico*</td>
+                        <td><input type="email" name="email" class="mediano" placeholder="correo@email.com" required></td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña*</td>
+                        <td><input type="password" name="clave" class="pequenio" required></td>
+                    </tr>
+                    <tr>
+                        <td>Confirmacion de la contraseña*</td>
+                        <td><input type="password" name="confirmacion" class="pequenio" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="condiciones" required>Aceptar condiciones*
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Suscribirme"></td>
+                    </tr>
+
+                </table>
+            </article>
+
+            <div>
+                <img src="revista.jpg">
+            </div>
+            <div>
+                <footer class="anchocompleto">
+                    <a href="contacto">Contacto</a>
+                    <a href="condiciones">Condiciones generales</a>
+                    <a href="envios">Condiciones y gastos de envio</a>
+                    <a href="soluciones">Politica de privacidad</a>
+                    <a href="contactos">Informacion de contacto</a>
+                </footer>
+            </div>
+            <input type="hidden" name="destinatario" value="roman_arriero_daob1819@cev.com">
+
+        </form>
+    </body>
+</html>
