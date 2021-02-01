@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Carnicerías ACME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="navbarcss/navbar.css">
+
+        <style>
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            #final {
+                background-color: black;
+                color: white;
+                padding: 10px;
+            }
+
+            #formulario {
+                background-color: grey;
+                color: black;
+            }
+
+            #boton {
+                margin: 10px 0 10px 0;
+            }
+
+            #social {
+                width: 300px;
+                background-color: white;
+                padding: 50px;
+                margin: auto;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+
+            <div class="container">
+                <a class="navbar-brand" href="#">Inicio</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mr-auto mx-auto">
+                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link" href="#">Productos</a>
+                        <a class="nav-link" href="#">Tiendas</a>
+                    </ul>
+                </div>  
+            </div>
+        </nav>
+
+        <article class="container">
+            <div class="text-center row justify-content-center">
+                <img src="imagenes/superior.jpg">
+                <section class="col">
+                    <h1>PRESENTACIÓN</h1>
+                    <p>En Carnicerías ACME ponemos a su disposición las mejores carnes, embutidos y platos preparados, entre otras delicias gourmet. Si tienen un evento y quieren deleitar a sus invitados con unos productos sanos, frescos y sabrosos, contacten con nosotros.</p>
+
+                    <h2>Reparto a domicilio</h2>
+                    <p>Realicen su pedido hoy mismo y mañana lo tendrán listo en su domicilio.</p>
+
+                    <h2>Corte tradicional</h2>
+                    <p>No tenemos bandejes preparadas. Nuestro corte es artesano y profesional.</p>
+                </section>
+            </div>
+
+            <div class="row justify-content-center">
+                <section class="text-center col-12 col-md-6 col-xl-3">
+                    <h3>Calidad</h3>
+                    <img src="imagenes/carne.jpg">
+                    <p>Carne de calidad de los valles pirenáicos. Con las mejores garantías de sanidad y sabor.</p>
+                </section>
+
+                <section class="text-center col-12 col-md-6 col-xl-3">
+                    <h3>Servicio 24h</h3>
+                    <img src="imagenes/entrega.jpg">
+                    <p>En nuestro transporte refigerado garantizamos que cumpliremos en 24h con nuestros compromisos.</p>
+                </section>
+
+                <section class="text-center col-12 col-md-6 col-xl-3">
+                    <h3>Restauración</h3>
+                    <img src="imagenes/restaurantes.jpg">
+                    <p>Servimos a los mejores restaurantes de Zaragoza. Si regentas un local de restauración llámanos.</p>
+                </section>
+
+                <section class="text-center col-12 col-md-6 col-xl-3">
+                    <h3>Charcutería</h3>
+                    <img src="imagenes/charcuteria.jpg">
+                    <p>Los mejores ejemplares de jamón ibérico y embutidos tradicionales. Especialistas en charcutería.</p>
+                </section>
+            </div>
+            
+            <div class="container">
+                <div class="row" id="social">
+                    <div class="col-12 col-md-4 col-xl-4" style="padding: 10px">
+                        <img src="imagenes/facebook.png">
+                    </div>
+                    <div class="col-12 col-md-4 col-xl-4" style="padding: 10px">
+                        <img src="imagenes/twitter.png">
+                    </div>
+                    <div class="col-12 col-md-4 col-xl-4"style="padding: 10px">
+                        <img src="imagenes/mapa.png">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container" id="formulario">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-xl-6">
+                        Email<input type="email" class="form-control"></div>
+                    <div class="col-12 col-md-6 col-xl-6">
+                        Telefono<input type="number" class="form-control"></div>
+                    <div class="col-12">
+                        Mensaje<textarea name="mensaje" class="form-control" rows="6"></textarea></div>
+                    <div class="col" id="boton">
+                        <input type="submit" value="Enviar" class="btn btn-dark float-right">
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="row justify-content-center">
+                <footer class="text-center col">
+                    <img src="imagenes/inferior.jpg">
+                    <p id="final">Calle Mayor 7. 28815 Madrid. Telf: 555 555 425</p>
+                </footer>
+            </section>
+        </article>
+
+        <script src="scripts/scriptbar.js"></script>
+
+    </body>
+
+</html>
